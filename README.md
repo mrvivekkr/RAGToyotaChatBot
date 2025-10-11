@@ -4,6 +4,13 @@ This project is a Retrieval-Augmented Generation (RAG) chatbot designed to help 
 
 ---
 
+## Live Demo
+
+Try the live version of this chatbot here:  
+[https://ragtoyotachatbot-app-kzbtz3.streamlit.app/chatbot](https://ragtoyotachatbot-app-kzbtz3.streamlit.app/chatbot)
+
+---
+
 ## Key Features
 
 - Conversational chat UI (built with Streamlit)
