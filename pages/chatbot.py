@@ -31,7 +31,7 @@ if user_manual_content:
             key='user_input')
 
         # Build the vector store to store the vectors
-        vector_store = st.session_state.vector_store
+        vector_store = st.session_state.get('vector_store', None)
         if vector_store is None:
             vector_store = build_vector_store(user_manual_content)
             st.session_state.vector_store = vector_store
@@ -66,4 +66,4 @@ if user_manual_content:
     # Handle the exception if the user manual is not loaded
     except Exception as e:
         print(e)
-        st.error("Sorry, an error occurred.")
+        st.error(f"Sorry, an error occurred: {str(e)}")
